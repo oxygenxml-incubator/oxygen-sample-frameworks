@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<a:authorAction xmlns:a="http://www.oxygenxml.com/ns/author/external-action"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.oxygenxml.com/ns/author/external-action http://www.oxygenxml.com/ns/author/external-action/authorAction.xsd"
+  id="sort.a.table">
+  <a:name>Sort Table</a:name>
+  <a:description>Sort the table according to the content of the cell at caret.</a:description>
+  <a:largeIconPath href="/images/Sort24.png"/>
+  <a:smallIconPath href="/images/Sort16.png"/>
+  <a:operations>
+    <a:operation id="ro.sync.ecss.extensions.commons.operations.JSOperation">
+      <a:xpathCondition>ancestor-or-self::table</a:xpathCondition>
+      <a:arguments>
+        <a:argument name="script">function doOperation() { sortTable();}</a:argument>
+      </a:arguments>
+    </a:operation>
+  </a:operations>
+</a:authorAction>

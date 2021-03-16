@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<a:authorAction xmlns:a="http://www.oxygenxml.com/ns/author/external-action"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.oxygenxml.com/ns/author/external-action http://www.oxygenxml.com/ns/author/external-action/authorAction.xsd"
+  id="delete.draft.comments">
+  <a:name>Delete Draft Commments</a:name>
+  <a:description>Delete all draft comments in the document</a:description>
+  <a:largeIconPath href="/images/DeleteElementTags24.png"/>
+  <a:smallIconPath href="/images/DeleteElementTags16.png"/>
+  <a:operations>
+    <a:operation id="ro.sync.ecss.extensions.commons.operations.DeleteElementsOperation">
+      <a:xpathCondition>//draft-comment</a:xpathCondition>
+      <a:arguments>
+        <a:argument name="elementLocations">//draft-comment</a:argument>
+      </a:arguments>
+    </a:operation>
+  </a:operations>
+</a:authorAction>
