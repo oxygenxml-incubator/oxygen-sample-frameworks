@@ -1,4 +1,4 @@
-# Oxygen Sample Framework
+# Oxygen Sample Frameworks
 
 A *framework* refers to a package that contains resources and configuration information to provide ready-to-use support for an XML vocabulary or document type. A *framework* is associated to an XML document type according to a set of rules. It also includes a variety of settings that improve editing capabilities for its particular file type. 
 
