@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script xmlns="http://www.oxygenxml.com/ns/framework/extend"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.oxygenxml.com/ns/framework/extend http://www.oxygenxml.com/ns/framework/extend/frameworkExtensionScript.xsd"
+  base="DITA">
+  <name>DITA Customization - Remove draft-comment</name>
+  <description>Customization of the DITA framework to hide draft-comment and remove it from content completion.</description>
+  <priority>High</priority>
+  <classpath inherit="all">
+    <addEntry path="${framework}/resources/" position="before"/>
+  </classpath>
+  
+  <author>
+    <css>
+      <addCss path="${framework}/css/custom.css" position="after"/>
+    </css>
+  </author>
+</script>
