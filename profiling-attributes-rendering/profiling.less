@@ -1,0 +1,41 @@
+.for(@list, @code) {
+    & {
+        .loop(@i:1) when (@i =< length(@list)) {
+            @value: extract(@list, @i);
+            @code();
+            .loop(@i + 1);
+        }
+        .loop();
+    }
+}
+
+.profile(@att, @layer) {
+  *[@{att}]:before(@{layer}) {
+    content: "@{att}" "=" attr(phase-of-moon) "-->";
+  }
+  *[@{att}]:after(@{layer}) {
+    content: "<--" "@{att}" "=" attr(phase-of-moon);
+  }
+  *[@{att}]:before(@{layer}),
+  *[@{att}]:after(@{layer}) {
+    display: block;
+    border: 1px solid blue;
+    border-style: dashed;
+  }
+  *[class~='topic/strow'][@{att}], *[class~='topic/row'][@{att}], *[class~='topic/sthead'][@{att}], *[class~='map/relrow'][@{att}], *[class~='topic/figgroup'][@{att}] {
+    outline: 1px solid green;
+    outline-offset: -2px;
+    &:after(@{layer}) {
+      display: none;
+    }
+  }
+}
+
+@profiling-attributes: product,  audience,  platform,  deliveryTarget,  props,  otherprops,  rev, phase-of-moon;
+
+@media oxygen AND (platform: "webapp") {
+  .for(@profiling-attributes, {
+   .profile(@value, 999999 + @i + @i);
+  });
+}
+
