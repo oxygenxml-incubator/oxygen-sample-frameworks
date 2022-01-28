@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script xmlns="http://www.oxygenxml.com/ns/framework/extend"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.oxygenxml.com/ns/framework/extend http://www.oxygenxml.com/ns/framework/extend/frameworkExtensionScript.xsd"
+  base="DITA">
+  <name>Custom DITA</name>
+  <description/>
+  <priority>High</priority>
+  
+  <author>
+    <!-- 
+      Author Actions are loaded from the `dita_custom_externalAuthorActions` folder.
+    -->
+    <toolbars>
+      <toolbar>
+        <separator/>
+        <addAction id="remove.id"/>
+      </toolbar>
+    </toolbars>
+  </author>
+
+  <webResources inherit="all">
+    <addEntry path="${frameworkDir}/my-action.js"/>
+  </webResources>
+  
+  
+</script>

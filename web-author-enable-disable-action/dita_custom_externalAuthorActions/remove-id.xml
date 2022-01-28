@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<a:authorAction xmlns:a="http://www.oxygenxml.com/ns/author/external-action"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.oxygenxml.com/ns/author/external-action http://www.oxygenxml.com/ns/author/external-action/authorAction.xsd"
+  id="remove.id">
+  <a:name>Remove ID</a:name>
+  <a:description>Removes the ID of the current element</a:description>
+  <a:largeIconPath href="/images/DeleteArea24.png"/>
+  <a:smallIconPath href="/images/DeleteArea16.png"/>
+  <a:operations>
+    <a:operation id="ro.sync.ecss.extensions.commons.operations.ChangeAttributeOperation">
+      <a:arguments>
+        <a:argument name="name">id</a:argument>
+        <a:argument name="value"></a:argument>
+      </a:arguments>
+    </a:operation>
+  </a:operations>
+</a:authorAction>
