@@ -1,0 +1,7 @@
+students {
+  display: block;
+}
+
+student {
+  content: "Name: " attr(name) " Surname: " attr(surname);
+}

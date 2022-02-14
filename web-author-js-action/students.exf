@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script xmlns="http://www.oxygenxml.com/ns/framework/extend"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.oxygenxml.com/ns/framework/extend http://www.oxygenxml.com/ns/framework/extend/frameworkExtensionScript.xsd">
+
+  <name>Students List</name>
+  <description>Sample Framework that matches documents that contain a list of students. It uses a custom action implemented in JavaScript.</description>
+  <priority>Normal</priority>
+  
+  <documentTemplates>
+    <addEntry path="${framework}/Students.xml"/>
+  </documentTemplates>
+
+  <associationRules>
+    <addRule rootElementLocalName="students"/>
+  </associationRules>
+
+  <author>
+    <css>
+      <addCss path="${framework}/styles.css"/>
+    </css>
+    <toolbars>
+      <toolbar name="Students"/>
+    </toolbars>
+  </author>
+
+  <webResources inherit="all">
+    <addEntry path="${frameworkDir}/add-student.js"/>
+  </webResources> 
+</script>
