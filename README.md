@@ -14,10 +14,11 @@ Using the frameworks
 -----------------
 
 To use the frameworks in Oxygen XML Web Author, you should:
-1. Download the entire repository
-1. Create an archive with just the folder that contains the desired framework
-1. Go to the Web Author Administration Page
-1. In the Frameworks section, click *Upload Framework* and choose the archive made at step 2.
+1. Make sure you have Oxygen XML Web Author version 24 or later.
+2. Download the entire repository
+3. Create an archive with just the folder that contains the desired framework
+4. Go to the Web Author Administration Page
+5. In the Frameworks section, click *Upload Framework* and choose the archive made at step 2.
 
 To use the frameworks in Oxygen XML Author / Editor, you should:
 1. Dowload the entire repository
