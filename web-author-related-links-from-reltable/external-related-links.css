@@ -1,0 +1,5 @@
+:root[class ~= "topic/topic"]:after {
+  content: oxy_editor(
+      webappRendererClassName, "com.oxygenxml.dita.links.related.external.Renderer"
+      edit, "custom");
+}
