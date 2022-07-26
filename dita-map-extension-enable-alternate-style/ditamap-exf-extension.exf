@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+
+The file must be saved inside a framework directory, the same place where a *.framework file should sit.
+
+To generate a *.framework file out of the script, you need to use the "Compile Framework Extension script" action 
+from the contextual menu.
+-->
+<script xmlns="http://www.oxygenxml.com/ns/framework/extend"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.oxygenxml.com/ns/framework/extend http://www.oxygenxml.com/ns/framework/extend/frameworkExtensionScript.xsd"
+  base="DITA Map">
+  <name>Enable inline insertion actions for DITA Map</name>
+  <description>DITA Map extension that sets the "Inline insertion actions" alternate stylesheet as enabled by default.</description>
+  <priority>High</priority>
+
+  <author>
+    <css>
+      <!-- Remove the alternate stylesheet and re-add it without setting it as alternate -->
+      <removeCss path="${framework}/css/webauthor/map-inline-insertion-actions.css"/>
+      <addCss path="${framework(DITA Map)}/css/webauthor/map-inline-insertion-actions.css"/>
+    </css>
+  </author>
+</script>
