@@ -1,0 +1,3 @@
+<!ELEMENT sample-root (title, p)>
+<!ELEMENT title  (#PCDATA)>
+<!ELEMENT p (#PCDATA)>
