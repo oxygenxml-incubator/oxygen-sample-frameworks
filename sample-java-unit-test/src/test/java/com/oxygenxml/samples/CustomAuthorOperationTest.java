@@ -45,9 +45,7 @@ public class CustomAuthorOperationTest {
   @Test
   public void testRootElementStyles() throws Exception {
     File testFile = new File("src/test/resources/sample-doc.xml");
-    AuthorDocumentModel authorDocumentModel = MockAuthorDocumentFactory.create(testFile);
-    logFrameworkLocation(authorDocumentModel);
-    
+    AuthorDocumentModel authorDocumentModel = createAuthorDocumentModel(testFile);
 
     AuthorElement rootElement = 
         authorDocumentModel.getAuthorDocumentController().getAuthorDocumentNode().getRootElement();
@@ -60,7 +58,6 @@ public class CustomAuthorOperationTest {
     assertTrue(isRedColorOnRoot);
   }
 
-
   /**
    * It invokes the CustomAuthorOperation and it asserts that it returs "true".
    * @throws Exception If it fails.
@@ -68,12 +65,18 @@ public class CustomAuthorOperationTest {
   @Test
   public void testDummyOperation() throws Exception {
     File testFile = new File("src/test/resources/sample-doc.xml");
-    AuthorDocumentModel authorDocumentModel = MockAuthorDocumentFactory.create(testFile);
+    AuthorDocumentModel authorDocumentModel = createAuthorDocumentModel(testFile);
 
     CustomAuthorOperation customAuthorOperation = new CustomAuthorOperation();
     String result = customAuthorOperation.doOperation(
         authorDocumentModel, Mockito.mock(ArgumentsMap.class));
     assertEquals("true", result);
+  }
+
+  private AuthorDocumentModel createAuthorDocumentModel(File testFile) throws Exception {
+    AuthorDocumentModel authorDocumentModel = MockAuthorDocumentFactory.create(testFile);
+    logFrameworkLocation(authorDocumentModel);
+    return authorDocumentModel;
   }
 
   private void logFrameworkLocation(AuthorDocumentModel authorDocumentModel) {
