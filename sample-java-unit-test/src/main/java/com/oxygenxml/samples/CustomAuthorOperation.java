@@ -9,7 +9,8 @@ import ro.sync.ecss.extensions.api.webapp.AuthorOperationWithResult;
 import ro.sync.exml.view.graphics.Color;
 
 /**
- * A dummy custom AuthorOperation.
+ * A dummy custom AuthorOperation.<br>
+ * Read more in the Oxygen SDK: <a href="https://www.oxygenxml.com/InstData/Editor/SDK/javadoc/ro/sync/ecss/extensions/api/AuthorOperation.html">AuthorOperation</a>.
  */
 public class CustomAuthorOperation extends AuthorOperationWithResult {
   @Override
