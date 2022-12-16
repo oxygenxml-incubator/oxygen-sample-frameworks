@@ -19,7 +19,7 @@ import ro.sync.exml.options.Options;
 import ro.sync.exml.view.graphics.Color;
 
 /**
- * Unit tests load a sample framework, create an AuthorDocumentModel,
+ * Unit tests that load a sample framework, create an AuthorDocumentModel,
  * and test its styles that are configured in the framework.
  */
 public class SampleTest {
