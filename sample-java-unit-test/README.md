@@ -2,7 +2,7 @@
 
 A sample Java unit test for a framework customization.
 
-See the actual test [CustomAuthorOperationTest](src/test/java/com/oxygenxml/samples/SampleTest.java).
+See the actual test: [SampleTest](src/test/java/com/oxygenxml/samples/SampleTest.java).
 
 ### Motivation:
 Test-driven development enables great development speed because you can test changes without having to restart Oxygen XML Editor or Oxygen XML Web Author.
