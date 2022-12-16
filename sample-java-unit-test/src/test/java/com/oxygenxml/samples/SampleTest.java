@@ -19,9 +19,10 @@ import ro.sync.exml.options.Options;
 import ro.sync.exml.view.graphics.Color;
 
 /**
- * Tests for {@link CustomAuthorOperation} that loads the sample framework.
+ * Unit tests load a sample framework, create an AuthorDocumentModel,
+ * and test its styles that are configured in the framework.
  */
-public class CustomAuthorOperationTest {
+public class SampleTest {
 
   /**
    * Init stuff.
@@ -30,12 +31,12 @@ public class CustomAuthorOperationTest {
   public static final void beforeAll() {
     MockAuthorDocumentFactory.initForTest();
 
-    // By default this test loads the sample framework from the "framework" directory
-    // but note that you can change this to load your already existing framework.
+    // By default this tests loads the sample framework from the "framework" directory
+    // but note that you can change this location to load your already existing framework.
     File sampleFrameworkDir = new File("framework");
     Options.getInstance().setStringArrayProperty(
-      ADDITIONAL_FRAMEWORKS_DIRECTORIES,
-      new String[] {sampleFrameworkDir.getAbsolutePath()});
+        ADDITIONAL_FRAMEWORKS_DIRECTORIES,
+        new String[] {sampleFrameworkDir.getAbsolutePath()});
   }
 
   /**
@@ -82,7 +83,6 @@ public class CustomAuthorOperationTest {
   private void logFrameworkLocation(AuthorDocumentModel authorDocumentModel) {
     String frameworkLocation = authorDocumentModel.getAuthorAccess().getEditorAccess()
         .getDocumentTypeInformation().getFrameworkStoreLocation();
-    System.out.println("Test document is associated with the framework located at '"
-    + frameworkLocation + "'");
+    System.out.println("Test document is associated with the framework located at '" + frameworkLocation + "'");
   }
 }
