@@ -6,6 +6,7 @@ See the actual test [CustomAuthorOperationTest](src/test/java/com/oxygenxml/samp
 
 ### Motivation:
 Test-driven development enables great development speed because you can test changes without having to restart Oxygen XML Editor or Oxygen XML Web Author.
+
 Another great advantage is that multiple users can work on the project without fear of breaking everything after each commit, that's because regressions are caught by the unit tests.
 
 
