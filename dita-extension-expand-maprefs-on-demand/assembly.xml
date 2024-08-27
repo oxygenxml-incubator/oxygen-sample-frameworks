@@ -1,0 +1,33 @@
+<!-- This is an assembly file used for all the sample plugins. -->
+
+<assembly
+    xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+
+  <id>plugin</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+
+  <files>
+    <file>
+      <source>dita-extension.exf</source>
+      <outputDirectory>framework</outputDirectory>
+    </file>
+    <file>
+      <source>target/build/${project.build.finalName}.jar</source>
+      <outputDirectory>framework/lib</outputDirectory>
+    </file>
+  </files>
+  <fileSets>
+    <fileSet>
+      <directory>css/</directory>
+      <outputDirectory>framework/css/</outputDirectory>
+    </fileSet>
+    <fileSet>
+      <directory>dita-extension_externalAuthorActions/</directory>
+      <outputDirectory>framework/dita-extension_externalAuthorActions/</outputDirectory>
+    </fileSet>
+  </fileSets>
+</assembly>

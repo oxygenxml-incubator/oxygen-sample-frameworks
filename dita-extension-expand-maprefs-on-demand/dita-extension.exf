@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<script xmlns="http://www.oxygenxml.com/ns/framework/extend"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.oxygenxml.com/ns/framework/extend http://www.oxygenxml.com/ns/framework/extend/frameworkExtensionScript.xsd"
+  base="DITA Map">
+  <name>DITA Map extension that allows expanding maprefs on demand.</name>
+  <description>DITA Map extension that extends disables maprefs expansion and adds buttons that users can use to manually expand maprefs.</description>
+  <priority>High</priority>
+
+  <classpath inherit="all" xmlns="http://www.oxygenxml.com/ns/framework/extend">
+    <addEntry path="${framework}/lib/dita-extension-maprefs-on-demand-expansion.jar"/>
+	<addEntry path="${framework}/target/classes"/>
+  </classpath>
+
+  <extensionPoints>
+    <extension name="extensionsBundle" value="com.oxygenxml.demo.CustomDitaMapExtensionsBundle"/>
+  </extensionPoints>
+  
+  <author>
+    <css>
+      <addCss path="${framework}/css/add-expand-mapref-buttin.css" position="after"/>
+    </css>
+  </author>
+</script>
