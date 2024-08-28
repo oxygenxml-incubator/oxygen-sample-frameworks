@@ -8,7 +8,7 @@ These frameworks can be used with the Oxygen applications that have an authoring
 - Oxygen XML Web Author
 - Oxygen Content Fusion
 
-This project contains sample frameworks that can be used as starting a point to create a customized authoring experience for an XML vocabulary. For more details about customization possibilities, check out the user manual: https://www.oxygenxml.com/doc/ug-editor/topics/authoring\_customization.html .
+This project contains sample frameworks that can be used as starting a point to create a customized authoring experience for an XML vocabulary. For more details about customization possibilities, check out the user manual: https://www.oxygenxml.com/doc/ug-editor/topics/authoring_customization.html .
 
 Using the frameworks
 -----------------
