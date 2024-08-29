@@ -19,7 +19,7 @@
   
   <author>
     <css>
-      <addCss path="${framework}/css/add-expand-mapref-buttin.css" position="after"/>
+      <addCss path="${framework}/css/add-expand-mapref-builtin.css" position="after"/>
     </css>
   </author>
 </script>
