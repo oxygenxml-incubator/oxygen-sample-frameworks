@@ -5,7 +5,7 @@
   xsi:schemaLocation="http://www.oxygenxml.com/ns/framework/extend http://www.oxygenxml.com/ns/framework/extend/frameworkExtensionScript.xsd"
   base="DITA Map">
   <name>DITA Map extension that allows expanding maprefs on demand.</name>
-  <description>DITA Map extension that extends disables maprefs expansion and adds buttons that users can use to manually expand maprefs.</description>
+  <description>DITA Map extension which allows on-demand loading of referenced submaps using buttons.</description>
   <priority>High</priority>
 
   <classpath inherit="all" xmlns="http://www.oxygenxml.com/ns/framework/extend">
