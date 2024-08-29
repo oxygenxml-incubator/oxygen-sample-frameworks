@@ -36,6 +36,12 @@
       <artifactId>oxygen-sdk</artifactId>
       <version>${oxygen.sdk.version}</version>
       <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>com.jidesoft</groupId>
+          <artifactId>jide-oss</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>com.oxygenxml</groupId>
@@ -43,6 +49,12 @@
       <version>${oxygen.sdk.version}</version>
       <classifier>framework-dita</classifier>
       <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>com.jidesoft</groupId>
+          <artifactId>jide-oss</artifactId>
+        </exclusion>
+      </exclusions>
     </dependency>
   </dependencies>
 
