@@ -9,5 +9,5 @@
     <a:operation id="com.oxygenxml.demo.RefreshReferenceOperation">
     </a:operation>
   </a:operations>
-  <a:enabledInReadOnlyContext>false</a:enabledInReadOnlyContext>
+  <a:enabledInReadOnlyContext>true</a:enabledInReadOnlyContext>
 </a:authorAction>

@@ -13,5 +13,5 @@ refresh-reference</a:argument>
       </a:arguments>
     </a:operation>
   </a:operations>
-  <a:enabledInReadOnlyContext>false</a:enabledInReadOnlyContext>
+  <a:enabledInReadOnlyContext>true</a:enabledInReadOnlyContext>
 </a:authorAction>
