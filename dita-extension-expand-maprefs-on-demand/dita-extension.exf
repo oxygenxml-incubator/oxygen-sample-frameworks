@@ -8,7 +8,7 @@
   <description>DITA Map extension which allows on-demand loading of referenced submaps using buttons.</description>
   <priority>High</priority>
 
-  <classpath inherit="all" xmlns="http://www.oxygenxml.com/ns/framework/extend">
+  <classpath inherit="all">
     <addEntry path="${framework}/lib/dita-extension-maprefs-on-demand-expansion.jar"/>
 	<addEntry path="${framework}/target/classes"/>
   </classpath>
