@@ -3,7 +3,8 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.oxygenxml.com/ns/author/external-action http://www.oxygenxml.com/ns/author/external-action/authorAction.xsd"
   id="expand-mapref">
-  <a:name>expand-mapref</a:name>
+  <a:name>[+]</a:name>
+  <a:description>Expand map reference</a:description>
   <a:operations>
     <a:operation id="ExecuteMultipleActionsOperation">
       <a:arguments>
