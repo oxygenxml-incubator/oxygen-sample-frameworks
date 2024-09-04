@@ -1,4 +1,4 @@
 *[class~="mapgroup-d/mapref"]:not(:-oxy-expand-refs):before(245),
 *[class~="map/topicref"][format="ditamap"]:not(:-oxy-expand-refs):before(245) {
-  content: oxy_button(actionID, 'expand-mapref', showText, true);
+  content: oxy_button(actionID, 'expand-mapref', showText, true, enableInReadOnlyContext, true);
 }
